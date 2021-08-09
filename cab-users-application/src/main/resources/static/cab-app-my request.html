@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>exercise</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/commontheme.css">
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<!--nav starts-->
+			<nav
+				class="navbar navbar-expand-lg navbar-light bg-light bg-topnav topnav-border p-0">
+				<a class="navbar-brand" href="cab-application-masterpage.html"><img
+					src="images/cab-application-logo.png" class="cabapp-logo"
+					alt="cablogo"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="list-group list-group-horizontal">
+						<li class="list-group-item nav-menu "><a
+							class="link bookacab-tab " href="cab-application-masterpage.html">Book
+								A Cab/Ongoing Trip</a></li>
+						<li class="list-group-item nav-menu bookacab-tabactive"><a
+							class="link myrequest-tab" href="cab-app-my request.html" id="myRequest">My
+								Request</a></li>
+					</ul>
+				</div>
+				<div class="float-end d-none d-sm-block ipad-responsive">
+					<!--contact starts-->
+					<div class="float-start">
+						<div class="header-right">
+							<div class="dropdown col-md-12 float-start">
+								<img src="images/phone-call.png" class="navphone-icons cursor"
+									alt="filter-icon" title="Admin Contacts" data-toggle="dropdown"
+									aria-expanded="true" id="adminContactsBtn">
+								<div class="dropdown-menu m-0 p-3 Admin-contact-popover">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-12 pb-2 border-0 mb-3">
+												<span class="text-style-title filter-title">Admin
+													Contacts</span>
+												<button type="button"
+													class="btn-close float-end close-filter"
+													data-dismiss="advanced-filter" aria-label="Close">
+												</button>
+											</div>
+
+											<div class="col-md-12 ">
+												<div class="row mb-3">
+													<div id="adminContacts">
+														
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--contact ends-->
+					<!--notification starts-->
+					<div class="float-start">
+						<div class="header-right">
+							<div class="dropdown col-md-12 float-start">
+
+								<img src="images/notification.png"
+									class="navnotify-icons cursor" alt="filter-icon"
+									title="Notification" data-toggle="dropdown"
+									aria-expanded="true" />
+
+								<div class="dropdown-menu m-0 py-3 notification-popover">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-12 pb-2 topnav-border w-100 mb-3 ">
+												<span class="text-style-title filter-titlenotification">Notification</span>
+												<button type="button"
+													class="btn-close float-end close-filter"
+													data-dismiss="advanced-filter" aria-label="Close">
+												</button>
+											</div>
+
+											<div class="col-md-12">
+												<div class="row mb-3">
+													<div class="topnav-border">
+														<div class=" col-md-12 float-start w-100">
+															<img src="images/notification-icon.png"
+																class="notification-icon float-start" alt="notifyicon">
+															<p class="float-start notification-content">Your trip
+																sheet has been generated</p>
+														</div>
+														<div class="float-end">
+															<h6 class="notification-time float-end ">10:15PM</h6>
+														</div>
+													</div>
+
+													<div class="topnav-border">
+														<div class=" col-md-12 float-start w-100">
+															<img src="images/notification-icon.png"
+																class="notification-icon float-start" alt="notifyicon">
+															<p class="float-start notification-content">Your trip
+																sheet has been generated</p>
+														</div>
+														<div class="float-end">
+															<h6 class="notification-time float-end ">10:15PM</h6>
+														</div>
+													</div>
+
+													<div class="topnav-border">
+														<div class=" col-md-12 float-start w-100">
+															<img src="images/notification-icon.png"
+																class="notification-icon float-start" alt="notifyicon">
+															<p class="float-start notification-content">Your trip
+																sheet has been generated</p>
+														</div>
+														<div class="float-end">
+															<h6 class="notification-time float-end ">10:15PM</h6>
+														</div>
+													</div>
+
+													<div>
+														<div class=" col-md-12 mt-3 ">
+															<div class="col-md-6 float-start">
+																<h6 class="total-records">2 Notification</h6>
+															</div>
+															<div class="col-md-6 float-end">
+																<h6 class="float-end total-records">Mark as read</h6>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--notification here-->
+					<!--user profile starts-->
+					<div class="float-start">
+						<div class="header-right">
+							<div class="dropdown col-md-12 float-start">
+
+								<!--<img src="images/user-profile.png"
+									class="navuserprofile-icons cursor" alt="filter-icon"
+									title="user-profile" data-toggle="dropdown"
+									aria-expanded="true" />-->
+ 			<span class="navuserprofile-icons cursor navuserprofile-icon-text" id="userprofile-icon" data-toggle="dropdown" aria-expanded="true"></span> 
+									
+								<div class="dropdown-menu m-0 p-3 profile-popover">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-md- pb-2 border-0 mb-3">
+												<button type="button"
+													class="btn-close float-end close-filter"
+													data-dismiss="advanced-filter" aria-label="Close">
+												</button>
+											</div>
+
+											<div class="col-md-12">
+												<div class="row mb-3">
+													<div>
+
+														<div class="row justify-content-center">
+															<img src="images/user-profile-icon.png"
+																class="user-profile-icon text-center" alt="profileicon">
+															 <h6 class="username text-center mt-2" id="employeeName">Nithya</h6>
+                                  	<div>
+                                    <div class=" col-md-12 col-12 float-start userprofile-content pt-2" id="domainName">UX Designer</div>
+                                    <div class=" col-md-12 col-12 float-start userprofile-content  pt-2" id="employeeId">Emp ID: 4569</div>
+                                    <div class=" col-md-12 col-12 float-start userprofile-content  pt-2" id="domainLead">Domain Lead: Rafi</div>
+                                      <!--<div class=" col-md-12 col-12 float-start userprofile-content  pt-2">Project: Cab Application</div>
+                                      <div class=" col-md-12 col-12 float-start userprofile-content  pt-2">Project lead: Rafi</div>-->
+
+															</div>
+														</div>
+
+													</div>
+													<div class="row justify-content-center mb-3 mt-2">
+														<div class="col-md-12 text-center">
+															<button type="button" class="btnlogoutbtn mt-2 " id="logout">Logout</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--user profile ends-->
+				</div>
+			</nav>
+			<div class="float-end  d-block d-sm-none responsive-mb ipad-block">
+				<!--contact starts-->
+				<div class="float-end">
+					<div class="float-start">
+						<div class="header-right">
+
+							<div class="dropdown col-md-12 float-start">
+								<a href="#" data-toggle="dropdown" aria-expanded="true"> <img
+									src="images/phone-call.png" class="navphone-icons cursor"
+									alt="filter-icon" title="Admin Contacts"></a>
+								<div class="dropdown-menu m-0 p-3 Admin-contact-popover">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-12 pb-2 border-0 mb-3">
+												<span class="text-style-title filter-title">Admin
+													Contacts</span>
+												<button type="button"
+													class="btn-close float-end close-filter"
+													data-dismiss="advanced-filter" aria-label="Close">
+												</button>
+											</div>
+
+											<div class="col-md-12 ">
+												<div class="row mb-3">
+													<div>
+														<label class="float-start"><a
+															class="link contact-number" href="#">+91
+																(123)456-7890</a>-Raghavan</label> <label class="float-start"><a
+															class="link contact-number" href="#">+91
+																(456)778-4569</a>-Santhosh</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--contact ends-->
+					<!--notification starts-->
+					<div class="float-start">
+						<div class="header-right">
+							<div class="dropdown col-md-12 float-start">
+
+								<img src="images/notification.png"
+									class="navnotify-icons cursor" alt="filter-icon"
+									title="Notification" data-toggle="dropdown"
+									aria-expanded="true" />
+
+								<div class="dropdown-menu m-0 py-3 notification-popover">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-12 pb-2 topnav-border w-100 mb-3 ">
+												<span class="text-style-title filter-titlenotification">Notification</span>
+												<button type="button"
+													class="btn-close float-end close-filter"
+													data-dismiss="advanced-filter" aria-label="Close">
+												</button>
+											</div>
+
+											<div class="col-md-12">
+												<div class="row mb-3">
+													<div class="topnav-border">
+														<div class=" col-md-12 float-start w-100">
+															<img src="images/notification-icon.png"
+																class="notification-icon float-start" alt="notifyicon">
+															<p class="float-start notification-content">Your trip
+																sheet has been generated</p>
+														</div>
+														<div class="float-end">
+															<h6 class="notification-time float-end ">10:15PM</h6>
+														</div>
+													</div>
+
+													<div class="topnav-border">
+														<div class=" col-md-12 float-start w-100">
+															<img src="images/notification-icon.png"
+																class="notification-icon float-start" alt="notifyicon">
+															<p class="float-start notification-content">Your trip
+																sheet has been generated</p>
+														</div>
+														<div class="float-end">
+															<h6 class="notification-time float-end ">10:15PM</h6>
+														</div>
+													</div>
+
+													<div class="topnav-border">
+														<div class=" col-md-12 float-start w-100">
+															<img src="images/notification-icon.png"
+																class="notification-icon float-start" alt="notifyicon">
+															<p class="float-start notification-content">Your trip
+																sheet has been generated</p>
+														</div>
+														<div class="float-end">
+															<h6 class="notification-time float-end ">10:15PM</h6>
+														</div>
+													</div>
+
+													<div>
+														<div class=" col-md-12 mt-3 ">
+															<div class="col-md-6 float-start">
+																<h6 class="total-records">2 Notification</h6>
+															</div>
+															<div class="col-md-6 float-end">
+																<h6 class="float-end total-records">Mark as read</h6>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--notification here-->
+					<!--user profile starts-->
+					<div class="float-start">
+						<div class="header-right">
+							<div class="dropdown col-md-12 float-start">
+
+								<img src="images/user-profile.png"
+									class="navuserprofile-icons cursor" alt="filter-icon"
+									title="user-profile" data-toggle="dropdown"
+									aria-expanded="true" />
+
+								<div class="dropdown-menu m-0 p-3 profile-popover">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-md- pb-2 border-0 mb-3">
+												<button type="button"
+													class="btn-close float-end close-filter"
+													data-dismiss="advanced-filter" aria-label="Close">
+												</button>
+											</div>
+
+											<div class="col-md-12">
+												<div class="row mb-3">
+													<div>
+
+														<div class="row justify-content-center">
+															<img src="images/user-profile-icon.png"
+																class="user-profile-icon text-center" alt="profileicon">
+															<h6 class="username text-center mt-2" id="employeeName">Nithya</h6>
+                                  <div>
+                                    <div class=" col-md-12 col-12 float-start userprofile-content pt-2" id="domainName">UX Designer</div>
+                                    <div class=" col-md-12 col-12 float-start userprofile-content  pt-2" id="employeeId">Emp ID: 4569</div>
+                                    <div class=" col-md-12 col-12 float-start userprofile-content  pt-2" id="domainLead">Domain Lead: Rafi</div>
+																<div
+																	class=" col-md-12 col-12 float-start userprofile-content  pt-2">Project:
+																	Cab Application</div>
+																<div
+																	class=" col-md-12 col-12 float-start userprofile-content  pt-2">Project
+																	lead: Rafi</div>
+															</div>
+														</div>
+
+													</div>
+													<div class="row justify-content-center mb-3 mt-2">
+														<div class="col-md-12 text-center">
+															<button type="button" class="btnlogoutbtn mt-2 ">Logout</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--user profile ends-->
+				</div>
+			</div>
+			<!--nav ends-->
+			<!--filter starts-->
+			<div class="col-md-12">
+				<div class="col-md-6 float-start">
+					<h3 class="my-request-title">My Request</h3>
+				</div>
+				<div class="col-md-6  float-end dropdown">
+
+					<img src="images/filter.png" class="filter-icon cursor float-end "
+						alt="filter-icon" title="Advanced Filter" data-toggle="dropdown"
+						aria-expanded="true">
+
+					<div class="dropdown-menu m-0 p-3 advanced-filter">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-md-12 pb-2 border-0 mb-3">
+									<span class="text-style-title filter-title">Advanced
+										Filter</span>
+									<button type="button" class="btn-close float-end"
+										id="close-filter" data-dismiss="advanced-filter"
+										aria-label="Close"></button>
+								</div>
+								<div class="col-md-12">
+									<div class="row mb-3">
+
+										<div class="col-md-6 mb-3">
+											<label class="mb-0 form-label filter-style">From</label> <select
+												class="form-select style-select1 border-filter-style"
+												id="Source" aria-label="Default-example">
+												<option selected>Select</option>
+												<option value="1">One</option>
+												<option value="2">Two</option>
+												<option value="3">Three</option>
+											</select>
+										</div>
+										<div class="col-md-6 mb-3">
+											<label class="mb-0 form-label filter-style ">To</label> <select
+												class="form-select style-select1 border-filter-style"
+												id="Destination" aria-label="Default-example">
+												<option selected>Select</option>
+												<option value="1">One</option>
+												<option value="2">Two</option>
+												<option value="3">Three</option>
+											</select>
+										</div>
+										<div class="col-md-6 mb-3">
+											<label class="mb-0 form-label filter-style ">Time
+												Slot</label> <select
+												class="form-select style-select1 border-filter-style"
+												id="Droppoint" aria-label="Default-example">
+												<option selected>Select</option>
+												<option value="1">One</option>
+												<option value="2">Two</option>
+												<option value="3">Three</option>
+											</select>
+										</div>
+										<div class="col-md-6 mb-3">
+											<label class="mb-0 form-label filter-style ">Status</label>
+											<select class="form-select style-select1 border-filter-style"
+												id="Timeslot" aria-label="Default-example">
+												<option selected>Select</option>
+												<option value="1">One</option>
+												<option value="2">Two</option>
+												<option value="3">Three</option>
+											</select>
+										</div>
+
+									</div>
+									<div class=" float-end">
+										<button class="btncancelbtn">Clear</button>
+										<button type="button" class="btnfilterbtn">Apply
+											Filter</button>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--filter ends-->
+			<div class="responsive-customise">
+				<table class="table mb-0 caps-grid">
+					<thead>
+						<tr class="display-shadow">
+
+							<th class="header-class" id="serial">S.No</th>
+							<th class="header-class" id="date">Date <span
+								class="sorting"><a class="sort-up" href="#"><img
+										class="sort-image" src="images/sortup-icon.svg" alt="sort-up" /></a><a
+									class="sort-down" href="#"><img class="sort-image"
+										src="images/sortdown-icon.svg" alt="sort-down" /></a></span></th>
+							<th class="header-class" id="timeslot">Time Slot<span
+								class="sorting"><a class="sort-up" href="#"><img
+										class="sort-image" src="images/sortup-icon.svg" alt="sort-up" /></a><a
+									class="sort-down" href="#"><img class="sort-image"
+										src="images/sortdown-icon.svg" alt="sort-down" /></a></span></th>
+							<th class="header-class" id="status">Status</th>
+								<th class="header-class" id="action">Action</th>
+						</tr>
+					</thead>
+					<tbody id="tableBody"></tbody>
+				</table>
+			</div>
+			<!--content ends-->
+			<!--footer starts-->
+			<div class="col-md-12 float-start pt-4">
+				<div class="col-md-6 col-12 float-start total-records" id="totalrecord"></div>
+				<div class="col-md-6 col-12 float-end">
+					<nav aria-label="Page navigation example">
+<!-- 						<ul class="pagination justify-content-end padination-border"> -->
+<!-- 							<li class="page-item disabled"><a -->
+<!-- 								class="page-link previous-page" href="#" tabindex="-1" -->
+<!-- 								aria-disabled="true">Previous</a></li> -->
+<!-- 							<li class="page-item"><a class="page-link current-page" -->
+<!-- 								href="#">1</a></li> -->
+<!-- 							<li class="page-item"><a class="page-link current-page " -->
+<!-- 								href="#">2</a></li> -->
+<!-- 							<li class="page-item"><a class="page-link current-page" -->
+<!-- 								href="#">3</a></li> -->
+<!-- 							<li class="page-item"><a class="page-link next-page" -->
+<!-- 								href="#">Next</a></li> -->
+<!-- 						</ul> -->
+					</nav>
+				</div>
+			</div>
+			<!--footer ends-->
+
+		</div>
+	</div>
+
+	<script type="text/javascript" src = "js/JsExceptionHandler.js" ></script>
+	<script src="js/logout.js"></script>
+	<script src="js/myrequest.js"></script>
+	<script src="js/ajaxHandler.js"></script>
+	<script src="js/timeFormatter.js"></script>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/disableInspect.js"></script>
+	<script>
+		$('.advanced-filter').click(function(event) {
+			event.stopPropagation();
+
+		});
+		$('#close-filter').click(function() {
+			$('.advanced-filter').removeClass('show');
+		})
+	</script>
+	
+</body>
+</html>

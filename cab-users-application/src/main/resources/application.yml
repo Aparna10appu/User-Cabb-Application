@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+jwt:
+  secret: "secret"
+  
+spring:
+  data:
+    mongodb:
+      port: 27017
+      host: 192.168.102.29
+      database: cabApplicationV1
+
+  mail:
+    host: smtp.office365.com
+    port: 587
+    
+    username: 
+    
+    password: 
+    
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true

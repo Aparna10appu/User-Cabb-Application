@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>Login</title>
+            <meta charset="utf-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel ="stylesheet" type="text/css" href="css/commontheme.css">
+             <link rel ="stylesheet" type="text/css" href="css/stylesheet.css">
+             
+        </head>
+        <body>
+           <div class="container-fluid">
+               <div class="row">
+                   <!--login starts--> 
+                   <!--nav starts-->
+                   <nav>
+                    <div class="col-md-12">
+                        <div class="float-start">
+                          <img src="images/avasoft-logo.png" class="avasoftlogo avasoftlogo-responsive" alt="logo">
+                        </div>
+                        <div class="float-end">
+                            
+                              <div class="float-start">
+                                <div class="header-right">
+                                  <div class="dropdown col-md-12 float-start">
+                                      <img  src="images/phone-call.png" class="navphone-icons-admin cursor navphone-icons-responsive" alt="filter-icon" title="Admin Contacts" id="adminContactsBtn" data-toggle="dropdown" aria-expanded="true">
+                                  <div class="dropdown-menu m-0 p-3 Admin-contact-popover" >
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-12 pb-2 border-0 mb-3"><span class="text-style-title filter-title">Admin Contacts</span>
+                                              <button type="button" class="btn-close float-end close-filter" data-dismiss="advanced-filter" aria-label="Close">
+                                            </button>
+                                            </div>
+                                          
+                                             <div class="col-md-12 ">
+                                              <div class="row mb-3">
+                                                  <div id="adminContacts">
+                                                   </div>
+                                                  </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                               </div>
+                               <h6 class="list-group-item menu menu-responsive float-start">Admin Contacts</h6>
+                               <img src="images/cab-application-logo.png" class="cabapp-logo cablogo-responsive float-start" alt="cablogo">
+                          
+                        </div>
+                    </div>
+                   </nav>
+                   <!--nav ends-->
+                   <div class="col-md-12 ">
+                      <div class="col-md-6 cab-illustration float-start">
+                         <img src="images/Illustration.png" class="illustration" alt="cabillustration">
+                      </div>
+                      <div class="col-md-12 col-lg-6 login-cred float-start mt-4">
+                        <h3 class="welcome">Welcome Back !!</h3>
+                        <h5 class="login-title">Login to continue</h5>
+                        <div class=" col-md-12  col-12 float-start mt-5">
+                        	<label id="invalidUser"></label>
+                            <label class="float-start login-id">Login ID</label>
+                        <input type="text"  class=" form-control email float-start" placeholder="Enter E-mail" id="email">
+                        </div>
+                        <div class=" col-md-12 col-12 float-start mt-5">
+                            <label class="float-start login-password">Password</label>
+                            <button type="button" id="showPassword" class="showbtn">Show Password</button>
+                        <input type="password"  class=" form-control password float-start" placeholder="Enter Password" id="password">
+                        </div>
+                       <div class=" col-md-12  col-12 check-box float-start mt-3 ">
+                        <div class="form-check ">
+                            <input class="form-check-input remember-checkbox float-start" type="checkbox" value="" id="rememberCheck">
+                            <label class="form-check-label " for="rememberCheck">Remember Me</label>
+                          </div>
+                       </div>
+                        <div>
+                            <button type="button" class="login" id="loginBut">LogIn
+                            <span class="loading" id="loadingAnime"></span>
+                            </button>
+                        </div>
+                      </div>
+                   </div>
+                    
+                    <!--login starts--> 
+
+               </div>
+
+           </div>
+            <!-- button -->
+              
+            
+            <!--action block popup starts-->
+            <div class="modal fade" id="actionblock" tabindex="-1" role="dialog" aria-labelledby="actionblocklabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-customise-width" role="document">
+                 <div  class="modal-content ">
+                  <div class="modal-header border-0 pb-0" >
+                    <h4 class=" action-blocked-title text-center " id="actionblocklabel" >Action Blocked!</h4>
+                    <button type="button"   class="close closeicon" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                   
+                    </div>
+               <div class="modal-body pt-4 ">
+                     <div class="actionblocked-content text-center" >
+                          <p>Your account has been blocked since you haven’t showed up on your previous trip.
+                            Please contact the admin to have it unblocked.</p>
+                     </div>
+                  </div>
+                  <div class="row justify-content-center mb-3 mt-2">
+                    <div class="col-md-12 text-center">
+                      <button type="button" class="btnokbtn" data-dismiss="modal">OK</button>
+                    </div>
+                </div>
+                </div>
+                </div>
+                </div>   
+                
+            <!--action block popup ends-->
+
+            <script src="js/login.js"></script>
+            <script src="js/ajaxHandler.js"></script>
+
+            <script src="js/jquery.min.js"></script>
+         <script src="js/popper.js"></script>
+         <script src="js/bootstrap.min.js"></script>
+         <script type="text/javascript" src = "js/JsExceptionHandler.js" ></script>
+         <script src="js/disableInspect.js"></script>
+         <script>
+          $('.advanced-filter').click(function (event) {
+          event.stopPropagation();
+          
+        });
+            $('#close-filter').click(function(){
+        $('.advanced-filter').removeClass('show');
+        })
+        </script>
+        </body>
+    </html>
+
+    
